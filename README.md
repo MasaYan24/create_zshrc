@@ -15,16 +15,10 @@
 ## インストールと使い方
 
 1. 本リポジトリをクローン、または `zshrc_generator.sh` をダウンロードします。
-2. 実行権限を付与します。
+2. スクリプトを実行します。
 
     ```sh
-    chmod +x zshrc_generator.sh
-    ```
-
-3. スクリプトを実行します。
-
-    ```sh
-    ./zshrc_generator.sh
+    bash ./zshrc_generator.sh
     ```
 
 4. `$HOME/.zshrc` が生成されます。
@@ -43,5 +37,5 @@
 ## 例
 
 ```sh
-./zshrc_generator.sh
+bash ./zshrc_generator.sh -f
 # => .zshrc generated at /home/yourname/.zshrc
