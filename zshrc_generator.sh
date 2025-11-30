@@ -26,6 +26,7 @@ if [ -e "$ZSHRC_OUT" ]  && [ "$FORCE" -ne 1 ]; then
 fi
 
 cat << 'EOF' > "$ZSHRC_OUT"
+# This script is created by https://github.com/MasaYan24/create_zshrc
 export PATH=~/bin:$PATH
 setopt no_beep
 
