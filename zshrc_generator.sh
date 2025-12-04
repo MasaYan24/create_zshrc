@@ -91,6 +91,10 @@ elif ls -G >/dev/null 2>&1; then
   echo "alias ls='ls -G'" >> "$ZSHRC_OUT"
 fi
 
+if command -v xclip >/dev/null 2>&1; then
+  echo "alias copyfile='xclip -selection clipboard <'" >> "$ZSHRC_OUT"
+fi
+
 echo "# End of generated .zshrc" >> "$ZSHRC_OUT"
 
 echo ".zshrc generated at $ZSHRC_OUT"
